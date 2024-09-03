@@ -1,0 +1,26 @@
+{
+  "name": "feliz-aniversario",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@mojs/core": "^1.7.1",
+    "@types/three": "^0.168.0",
+    "canvas-confetti": "^1.9.3",
+    "nuxt": "^3.13.0",
+    "splitting": "^1.1.0",
+    "three": "^0.168.0",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.77.8"
+  }
+}
