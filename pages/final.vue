@@ -76,20 +76,22 @@
   
   <style scoped>
     .confetti-page {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('foto19.webp'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: url('@/public/foto19.webp'); /* Substitua pelo caminho da sua imagem */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
   

@@ -19,15 +19,14 @@ export default defineComponent({
   },
   methods: {
     startStory() {
-      this.$router.push('/navigation');  // Redireciona para a rota /maps
+      this.$router.push('/navigation');  // Redireciona para a rota /navigation
     },
   },
 });
 </script>
 
 <style scoped>
-
-body{
+body {
   background-color: black;
 }
 
@@ -66,6 +65,7 @@ body{
   text-align: center;
   color: #ffffff; /* Cor do texto para contrastar com a imagem de fundo */
   z-index: 2; /* Coloca o conteúdo acima da camada de opacidade */
+  padding: 0 20px; /* Adiciona algum preenchimento para não cortar o texto em telas menores */
 }
 
 h1 {
@@ -86,14 +86,50 @@ h1 {
   border-radius: 50px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+.start-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.start-button:active {
+  transform: scale(0.95);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2em;
   }
 
-  &:active {
-    transform: scale(0.95);
+  .start-button {
+    font-size: 1.2em;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .start-button {
+    font-size: 1em;
+    padding: 8px 14px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .start-button {
+    font-size: 0.9em;
+    padding: 6px 12px;
+    margin-bottom: 30px;
   }
 }
 </style>
